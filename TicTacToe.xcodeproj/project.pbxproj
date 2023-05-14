@@ -16,6 +16,7 @@
 		E189CF942A10A3BE0069367E /* TicTacToeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E189CF932A10A3BE0069367E /* TicTacToeTests.swift */; };
 		E189CF9E2A10A3BE0069367E /* TicTacToeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E189CF9D2A10A3BE0069367E /* TicTacToeUITests.swift */; };
 		E189CFA02A10A3BE0069367E /* TicTacToeUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E189CF9F2A10A3BE0069367E /* TicTacToeUITestsLaunchTests.swift */; };
+		E189CFAD2A10A73C0069367E /* TicTacToeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E189CFAC2A10A73B0069367E /* TicTacToeViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		E189CF992A10A3BE0069367E /* TicTacToeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TicTacToeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E189CF9D2A10A3BE0069367E /* TicTacToeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicTacToeUITests.swift; sourceTree = "<group>"; };
 		E189CF9F2A10A3BE0069367E /* TicTacToeUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicTacToeUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		E189CFAC2A10A73B0069367E /* TicTacToeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicTacToeViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +104,7 @@
 				E189CF7C2A10A3AC0069367E /* AppDelegate.swift */,
 				E189CF7E2A10A3AD0069367E /* SceneDelegate.swift */,
 				E189CF802A10A3AD0069367E /* ViewController.swift */,
+				E189CFAC2A10A73B0069367E /* TicTacToeViewModel.swift */,
 				E189CF822A10A3AD0069367E /* Main.storyboard */,
 				E189CF852A10A3BC0069367E /* Assets.xcassets */,
 				E189CF872A10A3BC0069367E /* LaunchScreen.storyboard */,
@@ -261,6 +264,7 @@
 				E189CF812A10A3AD0069367E /* ViewController.swift in Sources */,
 				E189CF7D2A10A3AC0069367E /* AppDelegate.swift in Sources */,
 				E189CF7F2A10A3AD0069367E /* SceneDelegate.swift in Sources */,
+				E189CFAD2A10A73C0069367E /* TicTacToeViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
