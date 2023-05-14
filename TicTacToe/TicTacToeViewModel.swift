@@ -12,8 +12,7 @@ struct TicTacToeViewModel {
     
     var board = [UIButton]()
     
-    func initBoardCells(){
-        
+    init(cells: [UIButton]){
+        board = cells
     }
-    
 }

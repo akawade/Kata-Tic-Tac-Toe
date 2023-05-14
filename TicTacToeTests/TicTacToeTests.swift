@@ -20,8 +20,13 @@ class TicTacToeTests: XCTestCase {
 
     func test_initBoardCells() throws {
         //Arrange
-        let ticTacToeVModel = TicTacToeViewModel()
+        let cells = [UIButton(),UIButton(),UIButton(),
+                     UIButton(),UIButton(),UIButton(),
+                     UIButton(),UIButton(),UIButton()]
+        let ticTacToeVModel = TicTacToeViewModel(cells: cells)
         //Act
+      
+        //ticTacToeVModel.initBoardCells(cells: <#T##[UIButton]#>)
         
         //Assert
         XCTAssertEqual(ticTacToeVModel.board.count, 9)
