@@ -32,7 +32,7 @@
                                                             <constraint firstAttribute="height" constant="60" id="Lcf-K1-JKy"/>
                                                         </constraints>
                                                         <state key="normal" title="Button"/>
-                                                        <buttonConfiguration key="configuration" style="plain"/>
+                                                        <buttonConfiguration key="configuration" style="plain" title="X"/>
                                                         <connections>
                                                             <action selector="markCellAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Q5p-DB-MfF"/>
                                                         </connections>
@@ -44,7 +44,7 @@
                                                             <constraint firstAttribute="height" constant="60" id="ehN-kg-pCw"/>
                                                         </constraints>
                                                         <state key="normal" title="Button"/>
-                                                        <buttonConfiguration key="configuration" style="plain"/>
+                                                        <buttonConfiguration key="configuration" style="plain" title="X"/>
                                                         <connections>
                                                             <action selector="markCellAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="q42-uH-pr9"/>
                                                         </connections>
@@ -53,7 +53,7 @@
                                                         <rect key="frame" x="199.5" y="0.0" width="94.5" height="60"/>
                                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <state key="normal" title="Button"/>
-                                                        <buttonConfiguration key="configuration" style="plain"/>
+                                                        <buttonConfiguration key="configuration" style="plain" title="X"/>
                                                         <connections>
                                                             <action selector="markCellAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qzf-se-eHC"/>
                                                         </connections>
