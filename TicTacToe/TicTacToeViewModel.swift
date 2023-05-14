@@ -20,4 +20,19 @@ struct TicTacToeViewModel {
         let emptyCells = board.filter{(($0).title(for: .normal) == "")}
         return emptyCells.count > 0
     }
+    func checkIfAllCellsMarked() -> Bool{
+        let markedCells = board.filter{(($0).title(for: .normal) != "")}
+        return markedCells.count == 9
+    }
+    
+    func checkRowsMarkedForWinner(){
+        
+    }
+    func checkColumnsMarkedForWinner(){
+        
+    }
+    
+    func checkDiagonalyMarkedForWinner(){
+        
+    }
 }

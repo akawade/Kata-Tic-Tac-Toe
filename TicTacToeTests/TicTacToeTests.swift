@@ -52,7 +52,38 @@ class TicTacToeTests: XCTestCase {
         
        // print("Empty Cells - \(ticTacToeVModel.board.count)")
         XCTAssertTrue(ticTacToeVModel.checkBoardCellNotMarked())
+   }
+    
+    func test_checkIfAllCellsMarked(){
+        let a1 =  UIButton(frame: CGRect(x: 100, y: 100, width: 100, height: 50))
+        a1.setTitle("X", for: .normal)
+        let a2 =  UIButton(frame: CGRect(x: 100, y: 100, width: 100, height: 50))
+        a2.setTitle("O", for: .normal)
+        let a3 =  UIButton(frame: CGRect(x: 100, y: 100, width: 100, height: 50))
+        a3.setTitle("X", for: .normal)
+        let b1 =  UIButton(frame: CGRect(x: 100, y: 100, width: 100, height: 50))
+        b1.setTitle("X", for: .normal)
+        let b2 =  UIButton(frame: CGRect(x: 100, y: 100, width: 100, height: 50))
+        b2.setTitle("O", for: .normal)
+        let b3 =  UIButton(frame: CGRect(x: 100, y: 100, width: 100, height: 50))
+        b3.setTitle("X", for: .normal)
+        let c1 =  UIButton(frame: CGRect(x: 100, y: 100, width: 100, height: 50))
+        c1.setTitle("X", for: .normal)
+        let c2 =  UIButton(frame: CGRect(x: 100, y: 100, width: 100, height: 50))
+        c2.setTitle("O", for: .normal)
+        let c3 =  UIButton(frame: CGRect(x: 100, y: 100, width: 100, height: 50))
+        c3.setTitle("X", for: .normal)
+        let cells = [a1,a2,a3,
+                     b1,b2,b3,
+                     c1,c2,c3]
+        let ticTacToeVModel = TicTacToeViewModel(cells: cells)
+        
+        XCTAssertTrue(ticTacToeVModel.checkIfAllCellsMarked())
+    }
+ 
+    func test_checkRowsMarkedForWinner(){
         
     }
+   
 
 }

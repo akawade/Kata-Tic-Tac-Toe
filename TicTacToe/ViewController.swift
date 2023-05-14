@@ -33,8 +33,19 @@ class ViewController: UIViewController {
 
     }
     @IBAction func markCellAction(_ sender: Any) {
-        viewModel?.checkBoardCellNotMarked()
-        print("Board Not blank === \(viewModel?.checkBoardCellNotMarked())")
+//        viewModel?.checkBoardCellNotMarked()
+//        print("Board Not blank === \(viewModel?.checkBoardCellNotMarked())")
+        if viewModel?.checkIfAllCellsMarked() == true {
+            //check X is Winner
+            
+            //check O is Winner
+
+            //Draw
+            
+        }else {
+            
+        }
+        print("Board All Marked === \(viewModel?.checkIfAllCellsMarked())")
     }
 }
 
