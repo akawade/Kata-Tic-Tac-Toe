@@ -35,9 +35,11 @@ class ViewController: UIViewController {
        viewModel?.board.forEach{print("Cell Title -> \(String(describing: $0.title(for: .normal)))")}
 
     }
-    @IBAction func markCellAction(_ sender: Any) {
+    @IBAction func markCellAction(_ sender: UIButton) {
 //        viewModel?.checkBoardCellNotMarked()
 //        print("Board Not blank === \(viewModel?.checkBoardCellNotMarked())")
+        sender.setTitle("X", for: .normal)
+        sender.isEnabled = false
         //check X is Winner
         if viewModel?.checkRowsFullyMarkedForWinner() == true {
             //check O is Winner
@@ -45,16 +47,12 @@ class ViewController: UIViewController {
         }else if viewModel?.checkColumnsMarkedForWinner() == true  {
             self.showMessageToUser(title: "WinnerC", msg: "We have a winner")
 
+        }else if viewModel?.checkDiagonalyMarkedForWinner() == true {
+            self.showMessageToUser(title: "WinnerD", msg: "We have a winner")
         }else if viewModel?.checkIfAllCellsMarked() == true {
             //Draw
-        }else {
-            (sender as AnyObject).setTitle("X", for: .normal)
-            //(sender as! Cell).isMarked = true
-
-            //(sender as Cell).setTitle("X", for: .normal)
-            //self.showMessageToUser(title: "Pending", msg: "Board not marked completely")
-
         }
+
        // print("Board All Marked === \(viewModel?.checkIfAllCellsMarked())")
     }
     func showMessageToUser(title: String, msg: String)  {

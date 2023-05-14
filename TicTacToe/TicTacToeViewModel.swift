@@ -19,7 +19,7 @@ struct TicTacToeViewModel {
     init(cells: [Cell]){
         board = cells
        // let emptyCells = board.filter{(($0).title(for: .normal) == "")}
-        //board.forEach{$0.setTitle("", for: .normal)}
+        board.forEach{$0.setTitle("", for: .normal)}
 }
     
     func checkBoardCellNotMarked() -> Bool {
@@ -50,7 +50,11 @@ struct TicTacToeViewModel {
         return false
     }
     
-    func checkDiagonalyMarkedForWinner(){
-        
+    func checkDiagonalyMarkedForWinner()-> Bool{
+        if (((board[0].title(for: .normal) != "") && (board[0].title(for: .normal) == board[4].title(for: .normal)) && board[4].title(for: .normal) == board[8].title(for: .normal))
+            || ((board[2].title(for: .normal)  != "") && board[2].title(for: .normal) == board[4].title(for: .normal) && board[4].title(for: .normal) == board[6].title(for: .normal))) {
+            return true
+        }
+        return false
     }
 }
