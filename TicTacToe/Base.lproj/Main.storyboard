@@ -32,7 +32,10 @@
                                                             <constraint firstAttribute="height" constant="60" id="Lcf-K1-JKy"/>
                                                         </constraints>
                                                         <state key="normal" title="Button"/>
-                                                        <buttonConfiguration key="configuration" style="plain" title="X"/>
+                                                        <buttonConfiguration key="configuration" style="plain"/>
+                                                        <connections>
+                                                            <action selector="markCellAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Q5p-DB-MfF"/>
+                                                        </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="You-3W-5rO">
                                                         <rect key="frame" x="99.5" y="0.0" width="95" height="60"/>
@@ -41,13 +44,19 @@
                                                             <constraint firstAttribute="height" constant="60" id="ehN-kg-pCw"/>
                                                         </constraints>
                                                         <state key="normal" title="Button"/>
-                                                        <buttonConfiguration key="configuration" style="plain" title="X"/>
+                                                        <buttonConfiguration key="configuration" style="plain"/>
+                                                        <connections>
+                                                            <action selector="markCellAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="q42-uH-pr9"/>
+                                                        </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ziu-zR-qS1">
                                                         <rect key="frame" x="199.5" y="0.0" width="94.5" height="60"/>
                                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <state key="normal" title="Button"/>
-                                                        <buttonConfiguration key="configuration" style="plain" title="X"/>
+                                                        <buttonConfiguration key="configuration" style="plain"/>
+                                                        <connections>
+                                                            <action selector="markCellAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qzf-se-eHC"/>
+                                                        </connections>
                                                     </button>
                                                 </subviews>
                                             </stackView>
@@ -61,7 +70,10 @@
                                                             <constraint firstAttribute="height" constant="60" id="qCX-BV-D1K"/>
                                                         </constraints>
                                                         <state key="normal" title="Button"/>
-                                                        <buttonConfiguration key="configuration" style="plain" title="X"/>
+                                                        <buttonConfiguration key="configuration" style="plain"/>
+                                                        <connections>
+                                                            <action selector="markCellAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="h02-jg-G1h"/>
+                                                        </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wlI-vJ-JBv">
                                                         <rect key="frame" x="99.5" y="0.0" width="95" height="60"/>
@@ -70,7 +82,10 @@
                                                             <constraint firstAttribute="height" constant="60" id="xgX-zZ-6lj"/>
                                                         </constraints>
                                                         <state key="normal" title="Button"/>
-                                                        <buttonConfiguration key="configuration" style="plain" title="X"/>
+                                                        <buttonConfiguration key="configuration" style="plain"/>
+                                                        <connections>
+                                                            <action selector="markCellAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="228-y6-V2J"/>
+                                                        </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ij6-Jz-j3D">
                                                         <rect key="frame" x="199.5" y="0.0" width="94.5" height="60"/>
@@ -79,7 +94,10 @@
                                                             <constraint firstAttribute="height" constant="60" id="MCA-Re-PWu"/>
                                                         </constraints>
                                                         <state key="normal" title="Button"/>
-                                                        <buttonConfiguration key="configuration" style="plain" title="X"/>
+                                                        <buttonConfiguration key="configuration" style="plain"/>
+                                                        <connections>
+                                                            <action selector="markCellAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="GiV-VX-hRl"/>
+                                                        </connections>
                                                     </button>
                                                 </subviews>
                                             </stackView>
@@ -93,7 +111,10 @@
                                                             <constraint firstAttribute="height" constant="60" id="kJ3-xb-vPY"/>
                                                         </constraints>
                                                         <state key="normal" title="Button"/>
-                                                        <buttonConfiguration key="configuration" style="plain" title="X"/>
+                                                        <buttonConfiguration key="configuration" style="plain"/>
+                                                        <connections>
+                                                            <action selector="markCellAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="T7O-hX-eS6"/>
+                                                        </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nLO-7V-7OL">
                                                         <rect key="frame" x="99.5" y="0.0" width="95" height="60"/>
@@ -102,7 +123,10 @@
                                                             <constraint firstAttribute="height" constant="60" id="nkc-ty-ZSr"/>
                                                         </constraints>
                                                         <state key="normal" title="Button"/>
-                                                        <buttonConfiguration key="configuration" style="plain" title="X"/>
+                                                        <buttonConfiguration key="configuration" style="plain"/>
+                                                        <connections>
+                                                            <action selector="markCellAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Kww-Zl-HhX"/>
+                                                        </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="r5R-PX-SVw">
                                                         <rect key="frame" x="199.5" y="0.0" width="94.5" height="60"/>
@@ -111,7 +135,10 @@
                                                             <constraint firstAttribute="height" constant="60" id="ugY-Wz-9Kd"/>
                                                         </constraints>
                                                         <state key="normal" title="Button"/>
-                                                        <buttonConfiguration key="configuration" style="plain" title="X"/>
+                                                        <buttonConfiguration key="configuration" style="plain"/>
+                                                        <connections>
+                                                            <action selector="markCellAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="za0-9H-zi3"/>
+                                                        </connections>
                                                     </button>
                                                 </subviews>
                                             </stackView>
@@ -121,9 +148,9 @@
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstItem="tUk-M9-m7H" firstAttribute="leading" secondItem="xeY-72-gTb" secondAttribute="leading" id="2tY-H1-qhB"/>
+                                    <constraint firstAttribute="bottom" secondItem="tUk-M9-m7H" secondAttribute="bottom" id="Aqg-8F-xUX"/>
                                     <constraint firstAttribute="trailing" secondItem="tUk-M9-m7H" secondAttribute="trailing" id="GNo-ZS-JWx"/>
                                     <constraint firstItem="tUk-M9-m7H" firstAttribute="top" secondItem="xeY-72-gTb" secondAttribute="top" id="p6T-mb-mYL"/>
-                                    <constraint firstAttribute="bottom" secondItem="tUk-M9-m7H" secondAttribute="bottom" id="ux9-st-wuK"/>
                                 </constraints>
                             </view>
                         </subviews>
@@ -132,7 +159,7 @@
                         <constraints>
                             <constraint firstItem="xeY-72-gTb" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="60" id="LqZ-Ku-6WZ"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="xeY-72-gTb" secondAttribute="trailing" constant="60" id="SxI-Gp-xaf"/>
-                            <constraint firstItem="xeY-72-gTb" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.4" id="VJw-0r-fFH"/>
+                            <constraint firstItem="xeY-72-gTb" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.4" constant="-168.40000000000003" id="VJw-0r-fFH"/>
                             <constraint firstItem="xeY-72-gTb" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="78" id="XQJ-OC-KNx"/>
                         </constraints>
                     </view>

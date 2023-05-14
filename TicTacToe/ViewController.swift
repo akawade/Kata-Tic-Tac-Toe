@@ -32,5 +32,9 @@ class ViewController: UIViewController {
        viewModel = TicTacToeViewModel(cells: cellsArray)
 
     }
+    @IBAction func markCellAction(_ sender: Any) {
+        viewModel?.checkBoardCellNotMarked()
+        print("Board Not blank === \(viewModel?.checkBoardCellNotMarked())")
+    }
 }
 

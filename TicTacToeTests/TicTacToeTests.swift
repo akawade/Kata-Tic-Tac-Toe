@@ -10,8 +10,10 @@ import XCTest
 
 class TicTacToeTests: XCTestCase {
 
+    
     override func setUpWithError() throws {
         // Put setup code here. This method is called before the invocation of each test method in the class.
+        
     }
 
     override func tearDownWithError() throws {
@@ -32,11 +34,25 @@ class TicTacToeTests: XCTestCase {
         XCTAssertEqual(ticTacToeVModel.board.count, 9)
     }
 
-    func testPerformanceExample() throws {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
-        }
+    func test_checkAllBoardCellNotMarked() throws {
+        let a1 =  UIButton(frame: CGRect(x: 100, y: 100, width: 100, height: 50))
+        a1.setTitle("X", for: .normal)
+        let a2 =  UIButton(frame: CGRect(x: 100, y: 100, width: 100, height: 50))
+        a2.setTitle("O", for: .normal)
+        let a3 =  UIButton(frame: CGRect(x: 100, y: 100, width: 100, height: 50))
+        a3.setTitle("X", for: .normal)
+        print("A1 - \(a1.title(for: .normal))")
+        print("A2 - \(a2.title(for: .normal))")
+        print("A3 - \(a3.title(for: .normal))")
+
+        let cells = [a1,a2,a3,
+                     UIButton(),UIButton(),UIButton(),
+                     UIButton(),UIButton(),UIButton()]
+        let ticTacToeVModel = TicTacToeViewModel(cells: cells)
+        
+       // print("Empty Cells - \(ticTacToeVModel.board.count)")
+        XCTAssertTrue(ticTacToeVModel.checkBoardCellNotMarked())
+        
     }
 
 }

@@ -15,4 +15,9 @@ struct TicTacToeViewModel {
     init(cells: [UIButton]){
         board = cells
     }
+    
+    func checkBoardCellNotMarked() -> Bool {
+        let emptyCells = board.filter{(($0).title(for: .normal) == "")}
+        return emptyCells.count > 0
+    }
 }
