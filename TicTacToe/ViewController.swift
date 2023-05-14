@@ -41,9 +41,11 @@ class ViewController: UIViewController {
         //check X is Winner
         if viewModel?.checkRowsFullyMarkedForWinner() == true {
             //check O is Winner
-            self.showMessageToUser(title: "Winner", msg: "We have a winner")
-        }else
-            if viewModel?.checkIfAllCellsMarked() == true {
+            self.showMessageToUser(title: "WinnerR", msg: "We have a winner")
+        }else if viewModel?.checkColumnsMarkedForWinner() == true  {
+            self.showMessageToUser(title: "WinnerC", msg: "We have a winner")
+
+        }else if viewModel?.checkIfAllCellsMarked() == true {
             //Draw
         }else {
             (sender as AnyObject).setTitle("X", for: .normal)
