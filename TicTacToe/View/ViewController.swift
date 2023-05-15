@@ -30,51 +30,43 @@ class ViewController: UIViewController {
                      b1Btn,b2Btn,b3Btn,
                      c1Btn,c2Btn,c3Btn]
         let cellsArray = cells.compactMap { $0 }
-        // cellsArray.forEach{print("Cell Title -> \(String(describing: $0.title(for: .normal)))")}
-        playerTurn.text = "Player X"
+        playerTurn.text = Constants.turnX
         viewModel = TicTacToeViewModel(cells: cellsArray)
-        viewModel?.board.forEach{print("Cell Title -> \(String(describing: $0.title(for: .normal)))")}
-        
+        //viewModel?.board.forEach{print("Cell Title -> \(String(describing: $0.title(for: .normal)))")}
     }
     @IBAction func markCellAction(_ sender: UIButton) {
-        
         if viewModel?.player == .X {
             viewModel?.player = .O
-            playerTurn.text = "Player O"
+            playerTurn.text = Constants.turnO
             sender.setTitle("X", for: .normal)
-            
         }else {
             viewModel?.player = .X
-            playerTurn.text = "Player X"
+            playerTurn.text = Constants.turnX
             sender.setTitle("O", for: .normal)
         }
         sender.isEnabled = false
         if viewModel?.checkRowsFullyMarkedForWinner() == true {
             viewModel?.player = .X
-            self.showMessageToUser(title: "Winner", msg: "We have a winner \(winner)")
+            self.showMessageToUser(title: Constants.winner, msg: "\(Constants.alertWinnerMsg) \(winner)")
         }else if viewModel?.checkColumnsMarkedForWinner() == true  {
             viewModel?.player = .X
-            self.showMessageToUser(title: "Winner", msg: "We have a winner \(winner)")
-            
+            self.showMessageToUser(title: Constants.winner, msg: "\(Constants.alertWinnerMsg) \(winner)")
         }else if viewModel?.checkDiagonalyMarkedForWinner() == true {
             viewModel?.player = .X
-            self.showMessageToUser(title: "Winner", msg: "We have a winner \(winner)")
+            self.showMessageToUser(title: Constants.winner, msg: "\(Constants.alertWinnerMsg) \(winner)")
         }else if viewModel?.checkIfAllCellsMarked() == true {
             //Draw
             viewModel?.player = .X
-            self.showMessageToUser(title: "Draw", msg: "We have a no winner")
-            
+            self.showMessageToUser(title: Constants.draw, msg: Constants.alertNoWinnerMsg)
         }
-        
-    }
+}
     func showMessageToUser(title: String, msg: String)  {
         let alert = UIAlertController(title: title, message: msg, preferredStyle: UIAlertController.Style.alert)
         alert.addAction(UIAlertAction(title: "Ok", style: UIAlertAction.Style.default, handler: {_ in
-            self.playerTurn.text = "Player X"
+            self.playerTurn.text = Constants.turnX
             self.viewModel?.resetBoard()
         }))
         self.present(alert, animated: true, completion: nil)
     }
-    
 }
 
