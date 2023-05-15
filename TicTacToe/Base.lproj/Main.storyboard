@@ -32,7 +32,7 @@
                                                             <constraint firstAttribute="height" constant="60" id="Lcf-K1-JKy"/>
                                                         </constraints>
                                                         <state key="normal" title="Button"/>
-                                                        <buttonConfiguration key="configuration" style="plain" title="X"/>
+                                                        <buttonConfiguration key="configuration" style="plain"/>
                                                         <connections>
                                                             <action selector="markCellAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Q5p-DB-MfF"/>
                                                         </connections>
@@ -44,7 +44,7 @@
                                                             <constraint firstAttribute="height" constant="60" id="ehN-kg-pCw"/>
                                                         </constraints>
                                                         <state key="normal" title="Button"/>
-                                                        <buttonConfiguration key="configuration" style="plain" title="X"/>
+                                                        <buttonConfiguration key="configuration" style="plain"/>
                                                         <connections>
                                                             <action selector="markCellAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="q42-uH-pr9"/>
                                                         </connections>
@@ -53,7 +53,7 @@
                                                         <rect key="frame" x="199.5" y="0.0" width="94.5" height="60"/>
                                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <state key="normal" title="Button"/>
-                                                        <buttonConfiguration key="configuration" style="plain" title="X"/>
+                                                        <buttonConfiguration key="configuration" style="plain"/>
                                                         <connections>
                                                             <action selector="markCellAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qzf-se-eHC"/>
                                                         </connections>
@@ -153,6 +153,13 @@
                                     <constraint firstItem="tUk-M9-m7H" firstAttribute="top" secondItem="xeY-72-gTb" secondAttribute="top" id="p6T-mb-mYL"/>
                                 </constraints>
                             </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BAe-V6-ze7">
+                                <rect key="frame" x="60" y="78" width="294" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -173,6 +180,7 @@
                         <outlet property="c1Btn" destination="pbz-jb-YDD" id="uys-Hh-UjI"/>
                         <outlet property="c2Btn" destination="nLO-7V-7OL" id="11V-sY-a5Y"/>
                         <outlet property="c3Btn" destination="r5R-PX-SVw" id="SZI-zo-Sqm"/>
+                        <outlet property="playerTurn" destination="BAe-V6-ze7" id="WPf-ok-wtt"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
