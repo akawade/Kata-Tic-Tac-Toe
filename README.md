@@ -2,5 +2,5 @@
 
 App Screen - 
 
-![Optional Text](../main/Screenshot.png) ![Optional Text](../main/Screenshot.pn)
+![Optional Text](../main/Screenshot.png)
 
